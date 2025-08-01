@@ -4,13 +4,14 @@ import './App.css'
 import NavBar from './NavBar.jsx'
 import './index.css'
 import './App.css'
-
+import BookingForm from './BookingForm.jsx'
 
 
 function App() {
   return (
 <div>
   <NavBar/>
+  <BookingForm/>
 </div>
 );
 }

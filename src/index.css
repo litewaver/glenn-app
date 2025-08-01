@@ -58,11 +58,12 @@ nav {
 
 .links li a {
   text-decoration: none;
-  color: #222;
+  
   padding: 0.25rem 0.5rem;
 }
 
 .links li a:hover {
+ text-decoration: none;
  
 }
 
