@@ -1,8 +1,16 @@
 
+import {
+  Navbar,
+  MobileNav,
+  Typography,
+  Button,
+  IconButton,
+  Card,
+} from "@material-tailwind/react";
 
 const NavBar = () => {
   return (
-    <nav className="bg-gray-800 p-4 shadow-md fixed w-full z-10">
+    <nav className="sticky top-0 z-50 p-4 shadow-md fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-lg font-bold">Glenn Coco</div>
         <ul className="flex space-x-4">

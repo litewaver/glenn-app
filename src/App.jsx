@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './App.css'
 import NavBar from './NavBar.jsx'
 import './index.css'
-import tailwindcss from 'tailwindcss'
+import './App.css'
+
 
 
 function App() {
