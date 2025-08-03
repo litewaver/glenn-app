@@ -8,11 +8,17 @@ import {
   Card,
 } from "@material-tailwind/react";
 
+
+
+
+
 const NavBar = () => {
   return (
     <nav className="sticky top-0 z-50 p-4 shadow-md fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-lg font-bold">Glenn Coco</div>
+        <div id="logo" className="flex items-center">
+        <img src="./public/glenncocologo.jpg" alt="glenncocologo" />
+        </div>
         <ul className="flex space-x-4">
           <li><a href="/" className="text-white hover:text-green-300">Home</a></li>
           <li><a href="/reels" className="text-white hover:text-gray-300">Reels</a></li>
