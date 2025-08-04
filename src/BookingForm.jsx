@@ -35,9 +35,10 @@ function BookingForm() {
     <form onSubmit={handleSubmit} style={{ maxWidth: 320, margin: "auto" }}>
       <div>
         <label>
+          Email Glenn <br />
           Name: <br />
           <input
-            type="text"
+            type="text" 
             name="name"
             value={formData.name}
             onChange={handleChange}
