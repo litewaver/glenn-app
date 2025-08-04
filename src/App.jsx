@@ -5,14 +5,16 @@ import NavBar from './NavBar.jsx'
 import './index.css'
 import './App.css'
 import BookingForm from './BookingForm.jsx'
+import Biography from "./Biography";
+import FadeInText from './FadeInText.jsx'
 
-
+// Main App component
 function App() {
   return (
 <div>
   <NavBar/>
-  <BookingForm/>
   <Biography/>
+  <BookingForm/>
 </div>
 );
 }

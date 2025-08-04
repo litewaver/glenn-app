@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';  
+import FadeInText from './FadeInText';
 
 const Biography = ({
   name = "Glenn Coco",
@@ -26,9 +27,9 @@ const Biography = ({
         </div>
 
         {/* Text */}
-        <div className="flex-1">
+        <div className=" flex-1">
           <h2 className="text-4xl font-extrabold text-gray-900 mb-2">
-            {name}
+             <FadeInText>name</FadeInText> <h3 className='font-bold '>connection, culture, creativity</h3>
           </h2>
           <p className="text-sm uppercase tracking-wider text-indigo-600 font-semibold mb-4">
             {location} based {title}
@@ -40,7 +41,7 @@ const Biography = ({
             </p>
             <p>{background}</p>
             <p>{approach}</p>
-            <p>{journey}</p>
+            <p className=''>{journey}</p>
             <p className="italic">{philosophy}</p>
           </div>
         </div>
