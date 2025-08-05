@@ -3,13 +3,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import App from './App'; // the layout with <Outlet />
-import HomePage from './pages/HomePage';
-import Reels from './pages/Reels';
-import Services from './pages/Services';
-import About from './pages/About';
+import App from '../src/App'; // the layout with <Outlet />
+import HomePage from '../src/pages/HomePage';
+import Reels from '../src/pages/Reels'; // correct
+import Services from '../src/pages/Services'; // correct
+import About from '../src/pages/About'; // correct
 import BookingForm from './components/BookingForm';
-import NotFound from './components/NotFound'; // optional 404
+import BookingForm from '../src/components/Biography'; //
+
+import Biography from '../src/components/Biography';
+import NavBar from '../src/components/NavBar'; // correct
+import FadeInText from './components/FadeInText';
+import NotFound from './pages/NotFound'; // correct
+
 import 'react-datepicker/dist/react-datepicker.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
