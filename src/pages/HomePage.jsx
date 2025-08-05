@@ -1,20 +1,20 @@
+import Biography from '../components/Biography';
+import FadeInText from '../components/FadeInText';
+import { Outlet } from 'react-router-dom';
 
-import BookingForm from '../src/components/BookingForm'; //correct
-import NavBar from '../src/components/NavBar'; // correct
-import HomePage from '../src/pages/HomePage'; //correct 
-import 'react-datepicker/dist/react-datepicker.css'; // Importing DatePicker styles
-
-
-// Main App component
-function HomePage() {
+const HomePage = () => {
   return (
-<div>
-  <NavBar/>
-  <Biography/>
-  <BookingForm/>
-</div>
-);
-}
-
+    <>
+      
+      <Biography />
+      <FadeInText 
+        text="Welcome to Glenn Coco's Official Site!" 
+        delay={1000} 
+      />
+    </>
+  );
+};
 
 export default HomePage;
+
+

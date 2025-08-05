@@ -1,32 +1,49 @@
+import 'react-datepicker/dist/react-datepicker.css';
+import { Outlet, NavLink,  } from 'react-router-dom';
+import Booking from './pages/Booking'; 
+import Biography from './components/Biography';
+import HomePage from './pages/HomePage';
 
-import 'react-datepicker/dist/react-datepicker.css'; // Importing DatePicker styles
-import { Outlet, Link } from 'react-router-dom';
-import Biography from '../src/components/Biography';
-import NavBar from '../src/components/NavBar'; // correct
-import FadeInText from './components/FadeInText';
-import { NavLink } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div>
+    <>
       <nav>
-        <NavLink to="/">Home</NavLink> 
-        <NavLink to="/reels">Reels</NavLink>
-        <NavLink to="/services">Services</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/booking">Booking</NavLink>
+        <ul>
+          <li>
+            <NavLink to="/" end>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/reels">Reels</NavLink>
+          </li>
+          <li>
+            <NavLink to="/services">Services</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">About</NavLink>
+          </li>
+          <li>
+            <NavLink to="/booking">Booking</NavLink>
+          </li>
+        </ul>
       </nav>
 
       <main>
-        <NavBar />
-        <Biography />
-        <FadeInText text="Welcome to Glenn Coco's Offical Site!" delay={1000} />
-        {/* Outlet for nested routes */}  
         <Outlet />
+         {/* page content will render here */}
       </main>
-      <footer>© {new Date().getFullYear()} Glenn Coco</footer>
-    </div>
+    </>
   );
 };
 
 export default App;
+
+
+
+    /*    <NavBar />
+        <Biography />
+        <FadeInText text="Welcome to Glenn Coco's Offical Site!" delay={1000} />
+
+*/
