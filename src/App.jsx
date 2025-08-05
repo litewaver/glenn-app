@@ -1,8 +1,5 @@
 import 'react-datepicker/dist/react-datepicker.css';
-import { Outlet, NavLink,  } from 'react-router-dom';
-import Booking from './pages/Booking'; 
-import Biography from './components/Biography';
-import HomePage from './pages/HomePage';
+import { Outlet, NavLink, } from 'react-router-dom';
 
 
 const App = () => {

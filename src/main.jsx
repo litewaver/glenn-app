@@ -8,6 +8,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <App />
+      {/* The App component will handle the routing and rendering of nested routes */}
     </BrowserRouter>
   </StrictMode>
 );
