@@ -1,30 +1,28 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import React from 'react';
-import Reels from '../src/pages/Reels'; // correct
-import Services from '../src/pages/Services'; // correct
-import About from '../src/pages/About'; //correct
-import BookingForm from '../src/components/BookingForm'; //correct
-import NavBar from '../src/components/NavBar'; // correct
+
 import 'react-datepicker/dist/react-datepicker.css'; // Importing DatePicker styles
 
+import React from 'react';
+import { Outlet, Link } from 'react-router-dom';
 
-
-
-function App() {
+const App = () => {
   return (
-    <Router>
+    <div>
+      <nav>
+        <Link to="/">Home</Link> |{' '}
+        <Link to="/reels">Reels</Link> |{' '}
+        <Link to="/services">Services</Link>
+        <Link to="/about">About</Link>
+        <Link to="/booking">Booking</Link>
+      </nav>
+
       <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/reels" element={<Reels />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/booking" element={<BookingForm />} />
-          <Route path="/nav" element={<NavBar />} /> 
-        </Routes>
+        {/* nested routes render here */}
+        <Outlet />
       </main>
-    </Router>
+
+      <footer>© {new Date().getFullYear()} Glenn Coco</footer>
+    </div>
   );
-}
+};
 
 export default App;

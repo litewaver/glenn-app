@@ -1,26 +1,29 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Reels from '../src/pages/Reels'; // correct
-import Services from '../src/pages/Services'; // correct
-import About from '../src/pages/About'; //correct
-import HomePage from '../src/pages/HomePage'; //correct 
-import 'react-datepicker/dist/react-datepicker.css'; // Importing DatePicker styles
-import BookingForm from '../src/components/BookingForm'; //correct
-import NavBar from '../src/components/NavBar'; // correct
+// index.jsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-    function App() {
-      return (
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/nav" element={<NavBar />} />
-            <Route path="/reels" element={<Reels />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/booking" element={<BookingForm />} />
-          </Routes>
-        </BrowserRouter>
-      );
-    }
+import App from './App'; // the layout with <Outlet />
+import HomePage from './pages/HomePage';
+import Reels from './pages/Reels';
+import Services from './pages/Services';
+import About from './pages/About';
+import BookingForm from './components/BookingForm';
+import NotFound from './components/NotFound'; // optional 404
+import 'react-datepicker/dist/react-datepicker.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+root.render(
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />}>
+        <Route index element={<HomePage />} />
+        <Route path="reels" element={<Reels />} />
+        <Route path="services" element={<Services />} />
+        <Route path="about" element={<About />} />
+        <Route path="booking" element={<BookingForm />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
+);
