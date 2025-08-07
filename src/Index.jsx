@@ -10,6 +10,9 @@ import About from '../src/pages/About'; // correct
 import Booking from '../src/pages/Booking'; // correct
 import NotFound from '../src/pages/NotFound'; // correct
 
+import { createRoot } from 'react-dom/client';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <StrictMode>
