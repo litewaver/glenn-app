@@ -7,9 +7,13 @@ import {
   IconButton,
   Card,
 } from "@material-tailwind/react";
+ import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "../index.css";
+import "../App.css";
+import logo from "../assets/glenncocologo.jpg"; // Adjust the path as necessary
+import "../assets/glenncocologo.jpg"; // Adjust the path as necessary
 
-    import React from 'react';
-    import { Link } from 'react-router-dom';
 
 
 

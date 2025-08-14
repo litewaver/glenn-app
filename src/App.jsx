@@ -1,5 +1,5 @@
 import 'react-datepicker/dist/react-datepicker.css';
-import { Outlet, NavLink, } from 'react-router-dom';
+import { Outlet, NavLink } from 'react-router-dom';
 
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
         <ul>
           <li>
             <NavLink to="/" end>
-              Home
+              HomePage
             </NavLink>
           </li>
           <li>
@@ -29,6 +29,8 @@ const App = () => {
 
       <main>
         <Outlet />
+         <NavBar />
+        <Biography />
          {/* page content will render here */}
       </main>
     </>

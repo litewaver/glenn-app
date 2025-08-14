@@ -1,5 +1,7 @@
 import Biography from '../components/Biography';
 import FadeInText from '../components/FadeInText';
+import '../src/index.css';
+import App from '../src/App';
 
 const HomePage = () => {
   return (
