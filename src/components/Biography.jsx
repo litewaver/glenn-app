@@ -1,7 +1,5 @@
  
 import FadeInText from './FadeInText';
-import '../src/index.css';
-import App from '../src/App';
 
 
 const Biography = ({

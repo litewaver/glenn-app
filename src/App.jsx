@@ -1,8 +1,7 @@
 import React from 'react';
-import Home from './components/Home';
+import HomePage from './components/HomePage';
 import About from './components/About';
-import Contact from './components/Contact';
-import NavBar from './components/NavBar';
+
 import Biography from './components/Biography';
 import FadeInText from './components/FadeInText'; 
 
@@ -10,13 +9,12 @@ import FadeInText from './components/FadeInText';
 const App = () => {
   return (
     <>
-      <Home />
+      <HomePage />
       <About />
-      <Contact />
-      <NavBar />
+  
       <Biography />
       <FadeInText text="Welcome to Glenn Coco's Official Site!" delay={1000} />
-      
+
 
 
 
@@ -25,7 +23,7 @@ const App = () => {
   );
 };
 
-
+export default App;
 
     /*    <NavBar />
         <Biography />
