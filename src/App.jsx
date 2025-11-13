@@ -1,43 +1,29 @@
-import 'react-datepicker/dist/react-datepicker.css';
-import { Outlet, NavLink } from 'react-router-dom';
+import React from 'react';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import NavBar from './components/NavBar';
+import Biography from './components/Biography';
+import FadeInText from './components/FadeInText'; 
 
 
 const App = () => {
   return (
     <>
-      <nav>
-        <ul>
-          <li>
-            <NavLink to="/" end>
-              HomePage
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/reels">Reels</NavLink>
-          </li>
-          <li>
-            <NavLink to="/services">Services</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about">About</NavLink>
-          </li>
-          <li>
-            <NavLink to="/booking">Booking</NavLink>
-          </li>
-        </ul>
-      </nav>
+      <Home />
+      <About />
+      <Contact />
+      <NavBar />
+      <Biography />
+      <FadeInText text="Welcome to Glenn Coco's Official Site!" delay={1000} />
+      
 
-      <main>
-        <Outlet />
-         <NavBar />
-        <Biography />
-         {/* page content will render here */}
-      </main>
+
+
+
     </>
   );
 };
-
-export default App;
 
 
 
